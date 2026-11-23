@@ -5,10 +5,5 @@ import jakarta.persistence.PersistenceContext;
 
 @Entity
 public class Student {
-    long id;
-    String name;
-    int age;
-    String email;
-    public Student(){}
-
+    public Student(long id, String name, int age, String email){}
 }

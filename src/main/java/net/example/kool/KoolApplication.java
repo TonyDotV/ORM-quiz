@@ -14,8 +14,8 @@ public class KoolApplication {
     @Bean
     CommandLineRunner initData(StudentRepository studentRepository){
         return args -> {
-            studentRepository.save(new Student("Mart", 16, "mart.juur@mail.com"));
-            studentRepository.save(new Student("Mari", 20, "mari.maasikas@mail.com"));
+            studentRepository.save(new Student(1, "Mart", 16, "mart.juur@mail.com"));
+            studentRepository.save(new Student(2, "Mari", 20, "mari.maasikas@mail.com"));
         };
     }
 
